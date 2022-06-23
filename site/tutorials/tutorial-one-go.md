@@ -49,7 +49,7 @@ on behalf of the consumer.
 > First, install amqp using `go get`:
 >
 > <pre class="lang-go">
-> go get github.com/streadway/amqp
+> go get github.com/rabbitmq/amqp091-go
 > </pre>
 
 Now we have amqp installed, we can write some
@@ -75,7 +75,7 @@ package main
 import (
   "log"
 
-  "github.com/streadway/amqp"
+  amqp "github.com/rabbitmq/amqp091-go"
 )
 </pre>
 
@@ -172,7 +172,7 @@ package main
 import (
   "log"
 
-  "github.com/streadway/amqp"
+  amqp "github.com/rabbitmq/amqp091-go"
 )
 
 func failOnError(err error, msg string) {
